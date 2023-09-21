@@ -51,6 +51,12 @@ async function checkWeather(city) {  // the city will come from the input field
     }
 }
 
+searchField.addEventListener("keydown", (event) => {
+    if (event.keyCode === 13) { // 13 is the Enter key
+        
+        checkWeather(searchField.value);
+    }
+});
 searchBtn.addEventListener("click", () => {
     checkWeather(searchField.value);
 });
