@@ -48,6 +48,12 @@ body {
     width: 60px;
     height: 60px;
     cursor: pointer;
+    transform: scale(1);
+}
+
+.search button:hover {
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;
 }
 
 .search button img {
@@ -95,4 +101,12 @@ body {
 }*
 .weather {
     display: none;
+}
+
+.error {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display:none;
 }
