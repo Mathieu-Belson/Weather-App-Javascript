@@ -36,6 +36,15 @@ async function checkWeather(city) {  // the city will come from the input field
         else if(data.weather[0].main == "Mist") {
             weatherIcon.src = "images/mist.png";
         }
+        else if(data.weather[0].main == "Snow") {
+            weatherIcon.src = "images/snow.png";
+        }
+        else if(data.weather[0].main == "Fog") {
+            weatherIcon.src = "images/fog.png";
+        }
+        else if(data.weather[0].main == "Thunderstorm") {
+            weatherIcon.src = "images/thunderstorm.png";
+        }
     
         document.querySelector(".weather").style.display = "block";
         document.querySelector(".error").style.display = "none";
