@@ -49,8 +49,6 @@ async function checkWeather(city) {  // the city will come from the input field
         document.querySelector(".weather").style.display = "block";
         document.querySelector(".error").style.display = "none";
     }
-
-    
 }
 
 searchBtn.addEventListener("click", () => {
